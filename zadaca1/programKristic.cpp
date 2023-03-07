@@ -49,18 +49,19 @@ pair<int, float> Dictionary::search(int k)
 	}
 	return make_pair(NULL,NULL);	
 }
-/*
+
 void Dictionary::delete_p(int k)
 {
+	int i = 0;
 	for (auto h : hash_table)
 	{
+		i++;
 		if (k == h.first)
 		{
-			hash_table(hash_table.begin(), hash_table.end(), h);
+			hash_table.erase(hash_table.begin()+i);
 		}
 	}
 }
-*/
 
 int main()
 {
