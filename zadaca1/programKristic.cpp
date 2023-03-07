@@ -47,7 +47,7 @@ pair<int, float> Dictionary::search(int k)
 			return h;
 		}	
 	}
-	return make_pair(NULL,NULL);	
+	return make_pair(NULL, NULL);	
 }
 
 void Dictionary::delete_p(int k)
